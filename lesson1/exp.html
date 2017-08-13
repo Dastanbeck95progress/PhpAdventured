@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> exp </title>
+	<script type="text/javascript">
+
+		window.onload = init;
+
+		function init()
+		{
+			var but = document.getElementById("hide");
+
+			but.onclick = function(){
+				var text = document.getElementById("text");
+
+				if(text.style.display === "none"){
+					text.style.display = "inline-block";
+				}
+				else{
+					text.style.display = "none";
+				}
+
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+	<button style="display: block;" id="hide">click to hide</button>
+	<div style="background: rgb(19, 110, 255); font-size: 40px" id="text">Text is for example!</div>
+
+</body>
+</html>
